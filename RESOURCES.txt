@@ -1,0 +1,11 @@
+Resources for learning GBZ80 assembly:
+https://github.com/pret/pokecrystal/blob/master/INSTALL.md - how to get pokecrystal set up and build the unmodified ROM
+https://github.com/pret/pokecrystal/wiki/Tutorials - pokecrystal-specific tutorial wiki for adding and upgrading things
+https://eldred.fr/gb-asm-tutorial/ - GB ASM programming tutorial (geared toward writing a game from scratch but still a good intro)
+https://rgbds.gbdev.io/docs/gbz80.7 - explains what each assembly instruction does
+https://gbdev.io/gb-opcodes/optables/classic - a "cheat sheet" of all the instructions
+https://gbdev.io/pandocs/ - Pan Docs, a detailed technical reference for Game Boy hardware
+https://gbdev.io/list.html - Awesome List of more development resources
+https://github.com/pret/pokecrystal/wiki/Optimizing-assembly-code - Ways to make your code smaller and faster
+The wiki page https://github.com/pret/pokecrystal/wiki/Assembly-programming lists these and more 
+Rangi

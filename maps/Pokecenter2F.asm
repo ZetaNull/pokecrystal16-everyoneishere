@@ -415,8 +415,8 @@ Script_WalkOutOfMobileBattleRoom:
 	end
 
 Pokecenter2F_CheckGender:
-	checkflag ENGINE_PLAYER_IS_FEMALE
-	iftrue .Female
+	readvar VAR_PLAYERGENDER
+	ifnotequal MALE, .Female
 	applymovementlasttalked Pokecenter2FMovementData_ReceptionistWalksUpAndLeft_LookRight
 	applymovement PLAYER, Pokecenter2FMovementData_PlayerTakesThreeStepsUp
 	end
@@ -463,8 +463,7 @@ Script_WalkOutOfLinkTradeRoom:
 	clearflag ENGINE_KRIS_IN_CABLE_CLUB
 	playsound SFX_TINGLE
 	applymovement PLAYER, Pokecenter2FMovementData_PlayerSpinsClockwiseEndsFacingRight
-	setval (PAL_NPC_BLUE << 4)
-	special SetPlayerPalette
+	scall Script_RestorePlayerColor
 	applymovement PLAYER, Pokecenter2FMovementData_PlayerSpinsClockwiseEndsFacingLeft
 	special UpdatePlayerSprite
 	applymovement PLAYER, Pokecenter2FMovementData_PlayerTakesTwoStepsDown_2
@@ -485,8 +484,7 @@ Script_WalkOutOfLinkBattleRoom:
 	clearflag ENGINE_KRIS_IN_CABLE_CLUB
 	playsound SFX_TINGLE
 	applymovement PLAYER, Pokecenter2FMovementData_PlayerSpinsClockwiseEndsFacingRight
-	setval (PAL_NPC_BLUE << 4)
-	special SetPlayerPalette
+	scall Script_RestorePlayerColor
 	applymovement PLAYER, Pokecenter2FMovementData_PlayerSpinsClockwiseEndsFacingLeft
 	special UpdatePlayerSprite
 	applymovement PLAYER, Pokecenter2FMovementData_PlayerTakesTwoStepsDown_2
@@ -494,8 +492,8 @@ Script_WalkOutOfLinkBattleRoom:
 	end
 
 TimeCapsuleScript_CheckPlayerGender:
-	checkflag ENGINE_PLAYER_IS_FEMALE
-	iftrue .Female
+	readvar VAR_PLAYERGENDER
+	ifnotequal MALE, .Female
 	readvar VAR_FACING
 	ifequal LEFT, .MaleFacingLeft
 	ifequal RIGHT, .MaleFacingRight
@@ -573,8 +571,7 @@ Script_LeftTimeCapsule:
 	clearflag ENGINE_KRIS_IN_CABLE_CLUB
 	playsound SFX_TINGLE
 	applymovement PLAYER, Pokecenter2FMovementData_PlayerSpinsClockwiseEndsFacingRight
-	setval (PAL_NPC_BLUE << 4)
-	special SetPlayerPalette
+	scall Script_RestorePlayerColor
 	applymovement PLAYER, Pokecenter2FMovementData_PlayerSpinsClockwiseEndsFacingLeft
 	special UpdatePlayerSprite
 	applymovement PLAYER, Pokecenter2FMovementData_PlayerTakesOneStepDown
@@ -582,6 +579,17 @@ Script_LeftTimeCapsule:
 .Done:
 	setscene SCENE_POKECENTER2F_CHECK_MYSTERY_GIFT
 	setmapscene TIME_CAPSULE, SCENE_TIMECAPSULE_INITIALIZE
+	end
+
+Script_RestorePlayerColor:
+	readvar VAR_PLAYERGENDER
+	ifequal FEMALE, .Blue
+	setval (PAL_NPC_PINK << 4)
+	special SetPlayerPalette
+	end
+.Blue
+	setval (PAL_NPC_BLUE << 4)
+	special SetPlayerPalette
 	end
 
 Pokecenter2FLinkRecordSign:

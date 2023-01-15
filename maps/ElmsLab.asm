@@ -182,6 +182,7 @@ CyndaquilPokeBallScript:
 	waitsfx
 	promptbutton
 	givepoke CYNDAQUIL, 5, BERRY
+	givepoke RIOLU, 5, BERRY
 	closetext
 	readvar VAR_FACING
 	ifequal RIGHT, ElmDirectionsScript
@@ -212,6 +213,7 @@ TotodilePokeBallScript:
 	waitsfx
 	promptbutton
 	givepoke TOTODILE, 5, BERRY
+	givepoke RIOLU, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterTotodileMovement
 	sjump ElmDirectionsScript
@@ -240,6 +242,7 @@ ChikoritaPokeBallScript:
 	waitsfx
 	promptbutton
 	givepoke CHIKORITA, 5, BERRY
+	givepoke RIOLU, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterChikoritaMovement
 	sjump ElmDirectionsScript

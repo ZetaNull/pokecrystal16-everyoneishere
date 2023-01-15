@@ -73,6 +73,8 @@ SpriteAnimFrameData:
 	dw .Frameset_PCMode
 	dw .Frameset_PCMode2
 	dw .Frameset_PCPack
+	dw .Frameset_GreenWalk
+	dw .Frameset_MagnetTrainGreen
 	assert_table_length NUM_SPRITE_ANIM_FRAMESETS
 
 .Frameset_00:
@@ -528,3 +530,18 @@ SpriteAnimFrameData:
 .Frameset_PCPack:
 	oamframe SPRITE_ANIM_OAMSET_PC_PACK, 32
 	oamrestart
+
+.Frameset_GreenWalk:
+	oamframe SPRITE_ANIM_OAMSET_GREEN_WALK_1,  8
+	oamframe SPRITE_ANIM_OAMSET_GREEN_WALK_2,  8
+	oamframe SPRITE_ANIM_OAMSET_GREEN_WALK_1,  8
+	oamframe SPRITE_ANIM_OAMSET_GREEN_WALK_2,  8, OAM_X_FLIP
+	oamrestart
+
+.Frameset_MagnetTrainGreen:
+	oamframe SPRITE_ANIM_OAMSET_MAGNET_TRAIN_GREEN_1,  8
+	oamframe SPRITE_ANIM_OAMSET_MAGNET_TRAIN_GREEN_2,  8
+	oamframe SPRITE_ANIM_OAMSET_MAGNET_TRAIN_GREEN_1,  8
+	oamframe SPRITE_ANIM_OAMSET_MAGNET_TRAIN_GREEN_2,  8, OAM_X_FLIP
+	oamrestart
+	

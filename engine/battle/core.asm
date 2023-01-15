@@ -9078,9 +9078,16 @@ GetTrainerBackpic:
 	bit PLAYERSPRITESETUP_FEMALE_TO_MALE_F, a
 	jr nz, .Chris
 	ld a, [wPlayerGender]
-	bit PLAYERGENDER_FEMALE_F, a
+	and a ; MALE
 	jr z, .Chris
+	dec a ; FEMALE
+	jr z, .Kris
 
+; It's nonbinary.
+	farcall GetEnbyBackpic
+	ret
+
+.Kris:
 ; It's a girl.
 	farcall GetKrisBackpic
 	ret

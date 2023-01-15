@@ -191,7 +191,7 @@ DEF KRIS EQU __trainer_class__
 	const DANA3
 	const DANA4
 	const DANA5
-
+	
 	trainerclass JANINE ; 1a
 	const JANINE1
 
@@ -702,5 +702,6 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
-
+	
+DEF CHRYS EQU __trainer_class__
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

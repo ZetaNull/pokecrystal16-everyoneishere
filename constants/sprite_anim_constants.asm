@@ -85,6 +85,8 @@ DEF NUM_SPRITEANIMDICT_ENTRIES EQU 10
 	const SPRITE_ANIM_INDEX_PC_MODE                   ; 2f
 	const SPRITE_ANIM_INDEX_PC_MODE2                  ; 30
 	const SPRITE_ANIM_INDEX_PC_PACK                   ; 31
+	const SPRITE_ANIM_INDEX_GREEN_WALK                ; 32
+	const SPRITE_ANIM_INDEX_MAGNET_TRAIN_GREEN        ; 33
 DEF NUM_SPRITE_ANIM_INDEXES EQU const_value
 
 ; DoAnimFrame.Jumptable indexes (see engine/gfx/sprite_anims.asm)
@@ -204,6 +206,8 @@ DEF NUM_SPRITE_ANIM_SEQS EQU const_value
 	const SPRITE_ANIM_FRAMESET_PC_MODE                   ; 45
 	const SPRITE_ANIM_FRAMESET_PC_MODE2                  ; 46
 	const SPRITE_ANIM_FRAMESET_PC_PACK                   ; 47
+	const SPRITE_ANIM_FRAMESET_GREEN_WALK                ; 48
+	const SPRITE_ANIM_FRAMESET_MAGNET_TRAIN_GREEN        ; 49
 DEF NUM_SPRITE_ANIM_FRAMESETS EQU const_value
 
 ; SpriteAnimOAMData indexes (see data/sprite_anims/oam.asm)
@@ -356,4 +360,8 @@ DEF NUM_SPRITE_ANIM_FRAMESETS EQU const_value
 	const SPRITE_ANIM_OAMSET_PC_MODE                     ; 91
 	const SPRITE_ANIM_OAMSET_PC_MODE2                    ; 92
 	const SPRITE_ANIM_OAMSET_PC_PACK                     ; 93
+	const SPRITE_ANIM_OAMSET_GREEN_WALK_1                ; 94
+	const SPRITE_ANIM_OAMSET_GREEN_WALK_2                ; 95
+	const SPRITE_ANIM_OAMSET_MAGNET_TRAIN_GREEN_1        ; 96
+	const SPRITE_ANIM_OAMSET_MAGNET_TRAIN_GREEN_2        ; 97
 DEF NUM_SPRITE_ANIM_OAMSETS EQU const_value

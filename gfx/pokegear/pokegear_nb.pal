@@ -15,8 +15,8 @@
 	RGB 00, 00, 00
 ; city (enby)
 	RGB 28, 31, 20
-	RGB 08, 25, 17
-	RGB 00, 17, 11
+	RGB 22, 09, 31
+	RGB 10, 00, 26
 	RGB 00, 00, 00
 ; point of interest
 	RGB 28, 31, 20
@@ -28,3 +28,4 @@
 	RGB 00, 31, 00
 	RGB 15, 07, 00
 	RGB 31, 00, 00
+	

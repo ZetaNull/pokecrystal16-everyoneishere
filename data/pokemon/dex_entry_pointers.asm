@@ -253,4 +253,5 @@ PokedexDataPointerTable:
 	dba HoOhPokedexEntry
 	dba CelebiPokedexEntry
 	dba RioluPokedexEntry
+	dba LucarioPokedexEntry
 	assert_table_length NUM_POKEMON

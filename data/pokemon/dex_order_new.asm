@@ -254,4 +254,5 @@ NewPokedexOrder:
 	dw MEW
 	dw CELEBI
 	dw RIOLU
+	dw LUCARIO
 	assert_table_length NUM_POKEMON

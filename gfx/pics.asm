@@ -715,3 +715,5 @@ SECTION "Pics 19", ROMX
 
 RioluFrontpic:       INCBIN "gfx/pokemon/riolu/front.animated.2bpp.lz"
 RioluBackpic:        INCBIN "gfx/pokemon/riolu/back.2bpp.lz"
+LucarioFrontpic:     INCBIN "gfx/pokemon/lucario/front.animated.2bpp.lz"
+LucarioBackpic:      INCBIN "gfx/pokemon/lucario/back.2bpp.lz"

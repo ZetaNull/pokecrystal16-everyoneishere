@@ -2,7 +2,7 @@
 	dw NullIcon ; unused
 	dw NullIcon ; unused
 IconPointers:
-; entries correspond to ICON_* constants (see constants/icon_constants.asm)
+; entries correspond to ICON_* constants (see gfx/icons.asm)
 	table_width 2, IconPointers
 	dw NullIcon
 	dw BulbasaurIcon
@@ -257,4 +257,5 @@ IconPointers:
 	dw HoOhIcon
 	dw CelebiIcon
 	dw RioluIcon
+	dw LucarioIcon
 	assert_table_length NUM_POKEMON + 1

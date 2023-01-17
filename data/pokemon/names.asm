@@ -256,4 +256,5 @@ PokemonNames::
     db "Ho-Oh@@@@@"
     db "Celebi@@@@"
     db "Riolu@@@@@"
+	db "Lucario@@@"
 	assert_table_length NUM_POKEMON

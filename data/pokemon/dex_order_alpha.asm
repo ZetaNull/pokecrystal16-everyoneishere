@@ -114,6 +114,7 @@ AlphabeticalPokedexOrder:
 	dw LEDIAN
 	dw LEDYBA
 	dw LICKITUNG
+	dw LUCARIO
 	dw LUGIA
 	dw MACHAMP
 	dw MACHOKE

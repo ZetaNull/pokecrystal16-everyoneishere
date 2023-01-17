@@ -102,6 +102,7 @@ EvosAttacksPointers2::
 	dw HoOhEvosAttacks
 	dw CelebiEvosAttacks
 	dw RioluEvosAttacks
+	dw LucarioEvosAttacks
 .IndirectEnd::
 
 ChikoritaEvosAttacks:
@@ -1406,6 +1407,7 @@ CelebiEvosAttacks:
 	db 0 ; no more level-up moves
 
 RioluEvosAttacks:
+	dbbw EVOLVE_HAPPINESS, TR_ANYTIME, LUCARIO
 	db 0 ; no more evolutions
 	dbw 1, QUICK_ATTACK
 	dbw 1, FORESIGHT
@@ -1415,5 +1417,20 @@ RioluEvosAttacks:
 	dbw 17, LOW_KICK 
 	dbw 19, REVERSAL
 	dbw 24, SCREECH
-	dbw 28, SWORDS_DANCE
+	db 0 ; no more level-up moves
+
+LucarioEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, QUICK_ATTACK
+	dbw 1, FORESIGHT
+	dbw 1, ENDURE
+	dbw 6, COUNTER
+	dbw 11, METAL_CLAW
+	dbw 17, LOW_KICK 
+	dbw 19, BONE_RUSH
+	dbw 24, SCREECH
+	dbw 29, METAL_CLAW
+	dbw 33, SWORDS_DANCE
+	dbw 47, DRAGONBREATH ; 	Dragon Pulse placeholder
+	dbw 51, EXTREMESPEED
 	db 0 ; no more level-up moves
